@@ -1,0 +1,24 @@
+spring:
+  debug: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/freegame
+    username: freegame
+    password: nueva_password
+#    data: classpath*:oldschema.sql
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+server:
+  port: 8083
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
