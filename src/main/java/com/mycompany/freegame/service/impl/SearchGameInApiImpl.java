@@ -22,7 +22,6 @@ public class SearchGameInApiImpl implements SearchGameInApi {
     private final FreeGameApiClient freeGameApiClient;
     private final FindDeveloper findDeveloper;
     private final GameRepository gameRepository;
-    private final DeveloperRepository developerRepository;
 
     public Mono<Game> execute(Long id) {
         return freeGameApiClient.execute()
