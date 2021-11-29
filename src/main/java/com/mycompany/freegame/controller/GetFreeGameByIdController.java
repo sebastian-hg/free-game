@@ -16,6 +16,7 @@ import reactor.core.publisher.Mono;
 public class GetFreeGameByIdController {
     private final GetFreeGameById getFreeGameById;
     private final SearchGameInApi searchGameInApi;
+
     @GetMapping(value = "/{id}")
     public Mono<Game> getGameById(@PathVariable(value = "id") Long id) {
         return getFreeGameById.execute(id).switchIfEmpty(searchGameInApi.execute(id));

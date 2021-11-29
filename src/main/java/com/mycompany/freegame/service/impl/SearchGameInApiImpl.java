@@ -4,7 +4,6 @@ import com.mycompany.freegame.client.FreeGameApiClient;
 import com.mycompany.freegame.exception.GameNoExistsException;
 import com.mycompany.freegame.model.Game;
 import com.mycompany.freegame.model.dto.response.GameResponseDto;
-import com.mycompany.freegame.repository.DeveloperRepository;
 import com.mycompany.freegame.repository.GameRepository;
 import com.mycompany.freegame.service.FindDeveloper;
 import com.mycompany.freegame.service.SearchGameInApi;

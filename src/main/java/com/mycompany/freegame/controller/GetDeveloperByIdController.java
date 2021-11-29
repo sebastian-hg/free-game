@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 @AllArgsConstructor
 @RequestMapping("/developer/byId")
 @RestController
-public class GetdeveloperByIdController {
+public class GetDeveloperByIdController {
     private final GetDeveloperByID getDeveloperByID;
 
     @GetMapping(value = "/{id}")
